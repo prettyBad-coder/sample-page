@@ -132,11 +132,6 @@ body {
   bottom: -10px;
   left: -3px;
 }
-.navigation__icons-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-}
 .navigation__icon {
   height: 16px;
   cursor: pointer;
