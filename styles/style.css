@@ -108,13 +108,16 @@ body {
   gap: 60px;
   margin-right: 60px;
 }
-.navigation__link {
+.navigation__nav-item {
   list-style: none;
+}
+.navigation__link {
+  text-decoration: none;
+  position: relative;
   color: white;
   font-size: 14px;
   font-weight: 400;
   cursor: pointer;
-  position: relative;
 }
 .navigation__link:hover {
   color: #fce38a;

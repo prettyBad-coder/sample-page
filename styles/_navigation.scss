@@ -19,13 +19,17 @@
 		margin-right: 60px;
 	}
 
-	&__link {
+	&__nav-item {
 		list-style: none;
+	}
+
+	&__link {
+		text-decoration: none;
+		position: relative;
 		color: white;
 		font-size: 14px;
 		font-weight: 400;
 		cursor: pointer;
-		position: relative;
 
 		&:hover {
 			color: $yellow;
