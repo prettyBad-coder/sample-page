@@ -1,0 +1,40 @@
+.footer {
+	border-top: 1px solid #CCCCCC;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 80px;
+
+	&__text {
+		padding: 16px 0;
+		color: #707070;
+		font-size: 14px;
+
+		&--colored {
+			color: $red;
+		}
+	}	
+
+	&__newsletter {
+		display: flex;
+	}	
+
+	&__input {
+		border: 1px solid #CCCCCC;
+		border-right: none;
+		outline: none;
+		padding: 10px;
+
+		&::placeholder {
+			color: #CCCCCC;
+		}
+	}
+
+	&__button {
+		color: white;
+		background-color: $blue;
+		padding: 11px 33px;
+		border: none;
+		cursor: pointer;
+	}
+}

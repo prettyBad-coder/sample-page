@@ -1,0 +1,91 @@
+.team {
+	margin-top: 60px;
+
+	&__cards-wrapper {
+		margin-top: 60px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__card-image-background {
+		width: 100%;
+		background-color: $blue;
+		position: relative;
+		height: 470px;
+	}
+
+	&__card-image-wrapper {
+		transition: transform .2s ease-in-out;
+		width: 380px;
+
+		&:hover {
+			transform: translate(-15px, -15px);
+		}
+
+		&:hover .team__card-overlay {
+			opacity: 1;
+		}
+	}
+
+	&__card-image {
+		object-fit: cover;
+		height: 470px;
+		width: 380px;
+	}
+
+	&__card-overlay {
+		transition: opacity .2s ease-in-out; 
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 470px;
+		background: linear-gradient(180deg, rgba(243,129,129,.8) 0%, rgba(252,227,138,.8) 100%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__social-media-icons-wrapper {
+		display: flex;
+	}
+
+	&__social-media-icon {
+		width: 56px;
+		height: 56px;
+		background-color: $yellow;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&:hover {
+			background-color: $red;
+			cursor: pointer;
+		}
+
+		& > svg {
+			background-color: red;
+		}
+	}
+
+	&__card {
+		width: 380px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__card-title {
+		margin-top: 16px;
+		font-size: 14px;
+		color: #333333;
+		font-weight: 600;
+	}
+
+	&__card-description {
+		margin-top: 16px;
+		color: #999999;
+		font-size: 15px;
+	}
+}

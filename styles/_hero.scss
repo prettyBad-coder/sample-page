@@ -1,0 +1,40 @@
+.hero {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(180deg, rgba(243,129,129,0.85) 0%, rgba(252,227,138,0.85) 100%), url('../images/bird.png');
+	display: flex;
+	flex-direction: column;
+
+	&__title-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		color: white;
+		flex-grow: 1;
+		padding: 0 50px;
+		margin-top: 140px;
+	}
+
+	&__top-text {
+		font-size: 72px;
+		font-weight: 400;
+	}
+
+	&__title {
+		font-size: 150px;
+		font-weight: 700;
+		margin-top: 16px;
+	}
+
+	&__button {
+		font-size: 14px;
+		padding: 10px 35px;
+		border: 2px solid #fff;
+		font-weight: 700;
+		background-color: transparent;
+		color: #fff;
+		margin-top: 80px;
+		cursor: pointer;
+	}
+}

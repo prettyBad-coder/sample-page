@@ -1,0 +1,60 @@
+@import "./variables";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+}
+
+.main {
+	width: 100vw;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.font-kaushan {
+	font-family: 'Kaushan Script', cursive;
+}
+
+.section {
+
+	&-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: #333333;
+	}
+
+	&-top-text {
+		font-size: 24px;
+
+	}
+
+	&-title {
+		margin-top: 16px;
+		font-size: 30px;
+		font-weight: 700;
+	}
+
+	&-description {
+		color: #999999;
+		font-size: 15px;
+		text-align: center;
+	}
+}
+
+.hr {
+	width: 60px;
+	height: 3px;
+	background-color: $red;
+	border: none;
+	margin: 35px auto 60px auto;
+}

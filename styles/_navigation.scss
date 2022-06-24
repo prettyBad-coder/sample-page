@@ -1,0 +1,56 @@
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding-top: 35px;
+
+	&__logo {
+		height: 23px;
+	}
+	
+	&__right-side {
+		display: flex;
+	}
+
+	&__links-wrapper {
+		display: flex;
+		align-items: center;
+		gap: 60px;
+		margin-right: 60px;
+	}
+
+	&__link {
+		list-style: none;
+		color: white;
+		font-size: 14px;
+		font-weight: 400;
+		cursor: pointer;
+		position: relative;
+
+		&:hover {
+			color: $yellow;
+
+			&::after {
+				content: "";
+				position: absolute;
+				display: block;
+				width: 120%;
+				height: 2px;
+				background-color: $yellow;
+				bottom: -10px;
+				left: -3px;
+			}
+		}
+	}
+
+	&__icons-wrapper{
+		display: flex;
+		align-items: center;
+		gap: 60px;
+	}
+
+	&__icon {
+		height: 16px;
+		cursor: pointer;
+	}
+}
