@@ -4,8 +4,81 @@
 	margin: 0 auto;
 	padding-top: 35px;
 
+	@media (max-width: $lg) {
+		flex-direction: column;
+		justify-content: unset;
+		position: fixed;
+		top: 0;
+		right: -300px;
+		height: 100vh;
+		width: 300px;
+		background-color: #303030;
+		z-index: 1;
+		transition: .3s ease-in-out;
+		padding-top: 60px;
+	}
+
+	&--active {
+		right: 0;
+	}
+
+	&--active .navigation__outer-click {
+		display: block;
+	}
+
+	&__outer-click {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: calc(100vw - 300px);
+		height: 100vh;
+		background-color: transparent;
+	}
+
 	&__logo {
 		height: 23px;
+
+		@media (max-width: $xl) {
+			padding-left: 15px;
+		}
+
+		@media (max-width: $lg) {
+			display: none;
+		}
+	}
+
+	&__hamburger {
+		z-index: 10;
+		width: 30px;
+		display: none;
+		flex-direction: column;
+		gap: 10px;
+		cursor: pointer;
+		padding: 10px;
+		box-sizing: content-box;
+
+		@media (max-width: $lg) {
+			display: flex;
+		}
+	}
+
+	&__hamburger-line {
+		height: 2px;
+		width: 100%;
+		background-color: white;
+		transition: .3s ease-in-out;
+
+		&--active {
+			
+			&:first-child {
+				transform: rotate(45deg);
+			}
+
+			&:last-child {
+				transform: rotate(-45deg) translate(9px, -8px);
+			}
+		}
 	}
 	
 	&__right-side {
@@ -17,6 +90,15 @@
 		align-items: center;
 		gap: 60px;
 		margin-right: 60px;
+
+		@media (max-width: $lg) {
+			margin-top: 30px;
+			flex-direction: column-reverse;
+			gap: 15px;
+			margin-left: 20px;
+			font-size: 18px;
+			align-items: flex-start;
+		}
 	}
 
 	&__nav-item {

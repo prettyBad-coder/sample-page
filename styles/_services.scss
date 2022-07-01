@@ -8,11 +8,23 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 50px;
+
+		@media (max-width: $xl) {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media (max-width: $md) {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	&__card {
 		width: 350px;
 		display: flex;
+
+		@media (max-width: $md) {
+			width: 75vw;
+		}
 	}
 
 	&__card-icon-wrapper {

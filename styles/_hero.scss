@@ -17,15 +17,33 @@
 		flex-grow: 1;
 		padding: 0 50px;
 		margin-top: 140px;
+		font-size: 16px;
+
+		@media (max-width: $xl) {
+			font-size: 14px;
+		}
+
+		@media (max-width: $lg) {
+			font-size: 12px;
+		}
+
+		@media (max-width: $md) {
+			font-size: 8px;
+		}
+
+		@media (max-width: $sm) {
+			font-size: 4px;
+		}
 	}
 
 	&__top-text {
-		font-size: 72px;
+		font-size: 4.5em;
 		font-weight: 400;
+
 	}
 
 	&__title {
-		font-size: 150px;
+		font-size: 9.375em;
 		font-weight: 700;
 		margin-top: 16px;
 	}
@@ -39,5 +57,10 @@
 		color: #fff;
 		margin-top: 80px;
 		cursor: pointer;
+
+		@media (max-width: $md) {
+			font-size: 2em;
+			padding: 8px 27px;
+		}
 	}
 }

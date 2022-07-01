@@ -5,10 +5,19 @@
 	justify-content: space-between;
 	margin-top: 80px;
 
+	@media (max-width: $md) {
+		flex-direction: column;
+		margin-bottom: 30px;
+	}
+
 	&__text {
 		padding: 16px 0;
 		color: #707070;
 		font-size: 14px;
+
+		@media (max-width: $sm) {
+			font-size: 11px;
+		}
 
 		&--colored {
 			color: $red;
@@ -36,5 +45,10 @@
 		padding: 11px 33px;
 		border: none;
 		cursor: pointer;
+		
+		@media (max-width: $sm) {
+			padding: 0 10px;
+			font-size: 11px;
+		}
 	}
 }
